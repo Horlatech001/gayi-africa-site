@@ -236,11 +236,11 @@ button {
 /* Banner Section */
 .banner_section {
   height: 90vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../images/banner-bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,8 +262,8 @@ button {
 /* Other pages banner section */
 .other_section {
   height: 50vh;
-  background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-  url("../images/banner-bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -271,12 +271,45 @@ button {
   justify-content: center;
   align-items: center;
 }
-.img_7{
+.membership_section {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("../images/entrepernuer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partnership_section {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("../images/green.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project_section {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("../images/future.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_7 {
   width: 100%;
   height: 350px;
   border-radius: 10px;
 }
-.apply-left{
+.apply-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,12 +319,84 @@ button {
   max-width: 100%;
   border-radius: 15px;
 }
-#submitBtn:hover{
+#submitBtn:hover {
   background-color: #33cc33;
 }
-.modal-content{
+.modal-content {
   height: 400px;
 }
+
+/* core value section starts*/
+.core_section {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding-bottom: 90px;
+}
+
+.service {
+  width: 80%;
+  margin: auto;
+  height: 40px;
+  border: 1px solid #ffc000;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #ffc000;
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  top: -20px;
+}
+.service_content > p {
+  font-size: 20px;
+}
+/* core value section ends */
+
+/* Partnership section */
+.partner_section {
+  width: 100%;
+  float: left;
+  background-color: #33cc33;
+  padding-bottom: 90px;
+}
+.partner_bt {
+  width: 150px;
+  margin: auto;
+  border: 1px solid #ffffff;
+  padding: 8px;
+  text-transform: uppercase;
+}
+.partner_bt a {
+  color: #fff;
+}
+
+/* Membership section */
+.member_section {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding-bottom: 90px;
+}
+.member_bt {
+  width: 150px;
+  margin: auto;
+  border: 1px solid #33cc33;
+  padding: 8px;
+  text-transform: uppercase;
+}
+.member_bt a {
+  color: #33cc33;
+}
+
 /* about section start */
 .about_section {
   width: 100%;
@@ -502,7 +607,7 @@ button {
   color: #1b1b1b;
 }
 
-.ipsum_text_01{
+.ipsum_text_01 {
   float: left;
   margin-top: 0px;
   margin-left: 0px;
@@ -511,7 +616,7 @@ button {
   font-weight: 600;
 }
 
-.ipsum_text_01 > span{
+.ipsum_text_01 > span {
   color: #1b1b1b;
   font-weight: 200;
 }
@@ -528,19 +633,19 @@ button {
   padding-bottom: 90px;
 }
 
-.team-parent{
+.team-parent {
   justify-content: center;
   margin: auto;
   flex-wrap: wrap;
 }
 
-.team-text{
+.team-text {
   font-size: 18px;
   margin-top: -10px;
   text-align: center;
   font-weight: bold;
 }
-.team-role{
+.team-role {
   font-size: 16px;
   margin-top: -15px;
   text-align: center;
@@ -548,7 +653,7 @@ button {
   font-weight: 600;
 }
 
-.teams > img{
+.teams > img {
   width: 250px;
   height: 250px;
   margin: 20px;
@@ -810,8 +915,8 @@ input.address_text::placeholder {
     font-size: 3em;
   }
 }
-@media (max-width: 768px){
-  .banner_section{
+@media (max-width: 768px) {
+  .banner_section {
     height: 100vh;
   }
   .banner-text {
@@ -821,7 +926,7 @@ input.address_text::placeholder {
     font-size: 2.5em;
     margin-top: 80px;
   }
-  .banner-para{
+  .banner-para {
     width: 90%;
     font-size: 1.2em;
     margin-bottom: 80px;
@@ -830,11 +935,11 @@ input.address_text::placeholder {
     display: none;
   }
 }
-@media (max-width: 425px){
-  .banner_section{
+@media (max-width: 425px) {
+  .banner_section {
     height: 100vh;
   }
-  .other_section{
+  .other_section {
     height: 40vh;
   }
   .banner-text {
@@ -844,7 +949,7 @@ input.address_text::placeholder {
     font-size: 1.5em;
     margin-top: 150px;
   }
-  .banner-para{
+  .banner-para {
     width: 80%;
     font-size: 1em;
     margin-bottom: 150px;
@@ -852,13 +957,22 @@ input.address_text::placeholder {
   .other_taital {
     margin-top: 30px;
   }
-  .about_img{
+  .about_img {
     display: none;
   }
-  .about_text{
+  .about_text {
     margin-bottom: 20px;
   }
   .apply-img {
     display: none;
   }
+  .service_content {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .service_content > p {
+    font-size: 16px;
+  }
+
 }
